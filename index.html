@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://kit.fontawesome.com/3ea53c1d6b.js" crossorigin="anonymous"></script>
+  <title>Slide Animation</title>
+</head>
+
+<body>
+  <main>
+    <section class="landing">
+      <button class="btn btn-info btnside" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <nav class="navbar">
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false"  tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+
+
+          <button type="button" onclick="event.preventDefault(); doSmth();" class="btn-close text-reset justify-content-end" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active underline" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link underline"  href="#about" onclick=handleClick()>About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link underline" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link underline" href="#projects" tabindex="-1" aria-disabled="true">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link underline" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      </div>
+
+      <section>
+        <div class="row">
+          <div class="container-fluids col-lg-5">
+            <h2 class="big-text "><span class="s">Hi,</span> <br><span class="s"> i am Siddhartha kumar
+                singh,</span><br> <span class="job s"> Web Developer </span></h2>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </section>
+
+    <section class="aboutsec" id="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 abtdiv1">
+            <img class="myimg" src="2.jfif" alt="">
+          </div>
+          <div class="col-lg-8 abtdiv2">
+            <h1>About Me</h1>
+
+
+
+
+            <p>I am a self-taught Web Developer currently pursuing my BTech degree from <span>IIT Guwahati</span>, from
+              where i started my learning journey on how to make the web stunning and responsive. I have always been a
+              curious idividual
+              ,which is why i'd love to collaborate and do some real world projects in order to flourish my skills. I'm
+              very far from perfection, yet I'm resilient,assertive and stubborn and I find learning a fascinating
+              process. I am currently learning about some Devops tools and my future plan is to learn about ML for web
+              performance </p>
+            
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="servicessec">
+      <div class="container-fluids serv">
+        <h1 class="red">Services</h1>
+        <div class="row servcard">
+          <section class="services" id="services">
+            <div class="max-width">
+
+              <div class="serv-content row container-fluid">
+                <div class="card col-lg-4 col-sm-12 serviceCard">
+                  <div class="box">
+                    <i class="fas fa-code"></i>
+                    <div class="text">Web Devlopment</div>
+                    <p> Web site for the Internet, from developing a simple single static page of plain text to complex
+                      web applications, electronic businesses, and social network services.</p>
+                  </div>
+                </div>
+                <div class="card col-lg-4 col-12 serviceCard">
+                  <div class="box">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <div class="text">Responsive Designing</div>
+                    <p>
+                      A responsive web design will automatically adjust for different screen sizes and viewports.</p>
+                  </div>
+                </div>
+                <div class="card col-lg-4 col-12 serviceCard">
+                  <div class="box">
+                    <i class="fas fa-paint-brush"></i>
+
+                    <div class="text">Web Design</div>
+                    <p>web design include web graphic design; user interface design (UI design) user experience design
+                      (UX design); and search engine optimization.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section class="skillsec" id="skills">
+      <div class="container-fluid ">
+        <div class="row vow">
+          <h1 class="skillhead">Skills</h1>
+          <div class="col-lg-2 col-sm-4 col-4">
+            <img src="html logo.png" alt="" height="60px" width="100px">
+            <div class="container">
+              <h4><b>HTML</b></h4>
+
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-4"><img src="css logo.png" alt="" height="60px" width="60px">
+            <div class="container">
+              <h4><b>CSS</b></h4>
+
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-4"><img src="js logo.png" alt="" height="60px" width="60px">
+            <div class="container">
+              <h4><b>JAVASCRIPT</b></h4>
+
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-4"><img src="node logo.png" alt="" height="60px" width="60px">
+            <div class="container">
+              <h4><b>NODE JS</b></h4>
+
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-4"><img src="mongo.png" alt="" height="60px" width="60px">
+            <div class="container">
+              <h4><b>MONGO DB</b></h4>
+
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-4"><img src="bootstrap.png" alt="" height="60px" width="60px">
+            <div class="container">
+              <h4><b>BOOTSTRAP</b></h4>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 col-sm-4 col-4">
+            <img src="react.png" alt="" height="60px" width="60px">
+            <div class="container">
+              <h4><b>REACT</b></h4>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-4">
+            <img src="jq.png" alt="" height="60px" width="60px">
+            <div class="container">
+              <h4><b>JQUERY</b></h4>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-4">
+            <img src="django.png" alt="" height="60px" width="60px">
+            <div class="container">
+              <h4><b>DJANGO</b></h4>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <img src="git.png" alt="" height="60px" width="60px">
+            <div class="container">
+              <h4><b>GIT HUB</b></h4>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid skilldes">
+          <h4>My Creative Skills And Experience</h4>
+          <p>It's been long time since when i'm working on my web development during which i have learned skills for
+            frontend an backend devlopment.I have made many projects like Blog website,newsletter website,to do list and
+            also made some games with the use of javascript other than development i'm also doing competetive
+            programming .</p>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="pro">PROJECTS</h2>
+        <div class="row  procard">
+          <div class="card col-sm-4" style="width: 18rem;">
+            <img
+              src="https://theinitialteamtit.files.wordpress.com/2020/10/three_binge_worthy_shows_on_netflix_e28094_fennec.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Movies App</h5>
+              <p class="card-text">Includes User authenctication,and also fetch data from api and renders that data on
+                home page. It also have a database connected with MongoDB and stores user data in that database</p>
+              <a href="https://frozen-eyrie-23805.herokuapp.com/" class="btn btn-info">Check Out</a>
+            </div>
+          </div>
+          <div class="card col-sm-4" style="width: 18rem;">
+            <img
+              src="https://www.thoughtco.com/thmb/UU4qL6d7LhyblLHEKmNeOVct_9Y=/1885x1414/smart/filters:no_upscale()/startingcollege-58d177633df78c3c4ff303ba.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Grade Calculator</h5>
+              <p class="card-text">Built with the help of Node JS, this website has been used by many students of IIT
+                Guwahati to know their CPI/SPI for current semester thus solving some real life issues <br> <br></p>
+              <a href="https://flannel-inukshuk-09344.herokuapp.com/" class="btn btn-info">Check Out</a>
+            </div>
+          </div>
+          <div class="card col-sm-4" style="width: 18rem;">
+            <img src="https://images.idgesg.net/images/article/2019/01/google-keep-android2-100785982-large.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Keeper App</h5>
+              <p class="card-text">Built using React Framework inspired by google keeper app.It helps to keep the track
+                of day by taking down the things to do <br> <br> <br> <br> </p>
+              <a href="https://codesandbox.io/s/keeper-part-3-completed-forked-xp93z" class="btn btn-info">Check Out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <section>
+      <section class="contact" id="contact">
+        <div class="max-width ff container-fluid">
+          <h2 class="title pro">Contact me </h2>
+          <div class="contact-content row">
+            <div class="row column left">
+
+              <div class="icons col-12">
+                <div class="row">
+                  <i class="fas fa-user"></i>
+                  <div class="info">
+                    <div class="head">Name</div>
+                    <div class="sub-title">Siddhartha kumar singh</div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <i class="fas fa-envelope"></i>
+                  <div class="info">
+                    <div class="head">Email</div>
+                    <div class="sub-title">Siddhartha.singh@iitg.ac.in</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <div class="info">
+                    <div class="head">Phone</div>
+                    <div class="sub-title">9785844418</div>
+                  </div>
+                </div>
+                <div class="container-fluid contacticon">
+                  <a href="" class="fat"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  <a href="" class="fat"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a href="" class="fat"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </div>
+              
+            </div>
+          </div>
+          <div class="column right col-lg-6">
+            <div class="text">Message me</div>
+            <form class="formconact" action="POST" data-netlify="true">
+              <div class="fields">
+                <div class="field name">
+                  <input type="text" placeholder="Name" required>
+                </div>
+                <div class="field email">
+                  <input type="email" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="field">
+                <input type="text" placeholder="Subject" required>
+              </div>
+              <div class="field textarea">
+                <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+              </div>
+              <div class="button-area">
+                <button class="btn btn-info" type="submit">Send message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        </div>
+      </section>
+
+
+
+    </section>
+
+    </div>
+    </div>
+
+
+  </main>
+  <div class="intro">
+    <div class="intro-text">
+      <h1 class="hide">
+        <span class="text">Creating inovation</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">For Everyday</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">people.</span>
+      </h1>
+    </div>
+  </div>
+  <div class="slider"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
