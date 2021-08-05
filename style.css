@@ -358,6 +358,17 @@ background: none;
       display: flex;
       width: 100%;
     }
+    .big-text{
+      font-size: 11vw !important;
+      
+    }
+    h4{
+      font-size: 1rem !important;
+      
+    }
+}
+h3{
+  text-align: center;
 }
 
 @media screen and (max-width: 680px) {
@@ -375,8 +386,9 @@ background: none;
       width: -webkit-fill-available !important;
     }
     .myimg{
-      width: 10rem ;
-      height: 10rem;
+      width: 16rem !important;
+      height: 16rem !important;
+      
     }
     .abtdiv2{
       text-align: center;
